@@ -12,14 +12,8 @@
         background-image: url("assets/img/background.gif");
         background-repeat: no-repeat;
         background-position: center;
-        background-attachment: scroll;
+        background-attachment: fixed;
         background-size: cover;
-    }
-
-    .externo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     </style>
@@ -27,9 +21,7 @@
 </head>
 <body>
 
-    <!-- Para utilizarmos lista nós usaremos a tanto ol ou ul -->
-
-    <div class="menu">
+    <div class="menu centralizar p-10">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="personagem.html" target="_blank">Personagens</a></li>
@@ -37,31 +29,45 @@
         </ul>
     </div>
 
-    <!---- titulos e subtitulos utilizaremos os h's (h1, h2, h3... h6 -->
-    <h1 class="titulo">Blue Lock</h1>
-    
-    <!-- Paragrafos-->
-    <p>
+    <h1 class="titulo p-20 fontesans centralizar">Blue Lock</h1>
+    <p class="centralizar texto p-10">
         Blue Lock é uma série de mangá japonesa escrita por Muneyuki Kaneshiro e ilustrada por Yusuke Nomura. Foi serializado na Weekly Shōnen Magazine da Kodansha desde agosto de 2018, com os capítulos coletados em 21 volumes tankōbon em outubro de 2022. Em Outubro de 2022, ganhou uma serialização de Anime na TV Japonesa produzida pela Eight Bit.
     </p>
 
-    <br>
+    <h2 class="topico fontesans centralizar p-20">Sinopse</h2>
 
-    <h2 class="topico">Sinopse</h2>
+    <div class="texto p-10 centralizar">
     <p>
         Depois de refletirem sobre o estado atual do futebol japonês, a Associação Japonesa de Futebol decide contratar o enigmático e excêntrico técnico Jinpachi Ego para realizar seu sonho de ganhar a Copa do Mundo. Acreditando que ao Japão faltava um atacante egoísta faminto por gols, Jinpachi inicia o Blue Lock - uma prisão onde trezentos talentosos atacantes de escolas do ensino médio de todo o Japão são isolados e colocados uns contra os outros. O único sobrevivente do Blue Lock ganhará o direito de se tornar o atacante da equipe nacional, e aqueles que forem derrotados serão proibidos de se juntar a equipe para sempre.
     </p>
     <p>
         Um dos selecionados para participar deste arriscado projeto é Yoichi Isagi, um atacante que não conseguiu levar sua equipe de futebol do ensino médio para o torneio nacional. Depois de escolher passar para um colega de equipe que falhou ao invés de marcar ele mesmo, ele não pôde deixar de se perguntar se os resultados teriam sido diferentes se ele tivesse sido mais egoísta. Usando desta oportunidade de ouro dada pelo Projeto Blue Lock, Yoichi pretende esclarecer suas dúvidas e perseguir seu último desejo - tornar-se o maior atacante do mundo e levar o Japão à vitória na Copa do Mundo.
     </p>
+    </div>
 
-    <br>
+    <div class="p-20 centralizar">
+    <h2 class="topico centralizar">Trailer do Anime</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RezlceK7wiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="p-30"></iframe>
+    </div>
 
-    <!-- Para utilizar/implementar vídeos usaremos a tag iframe -->
-    <h2 class="topico">Trailer do Anime</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/RezlceK7wiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="externo"></iframe>
+    <hr>
 
-    <br>
+    <footer class="centralizar p-30 texto">
+
+        <div class="centralizar">
+            <a href="" target="_blank">
+                <img class="tm-icon" src="assets/img/facebook (1).png" alt="Facebook">
+            </a>
+            <a href="" target="_blank">
+                <img class="tm-icon" src="assets/img/instagram.png" alt="Instagram">
+            </a>
+            <a href="" target="_blank">
+                <img class="tm-icon" src="assets/img/twitter.png" alt="Twitter">
+            </a>
+        </div>
+
+        Todos os Direitos Reservados &copy
+    </footer>
 
     </body>
 </html>
