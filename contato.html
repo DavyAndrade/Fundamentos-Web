@@ -25,8 +25,8 @@
     <div class="menu centralizar p-10">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="personagem.html" target="_blank">Personagens</a></li>
-            <li><a href="contato.html" target="_blank">Contato</a></li>
+            <li><a href="personagem.html">Personagens</a></li>
+            <li><a href="contato.html">Contato</a></li>
         </ul>
     </div>
 
@@ -36,13 +36,18 @@
         <div class="p-20">
             <form class="form-flex">
             <label class="formulario texto" for="nome">Nome:</label>
-            <input class="mb-10" type="text" name="nome" id="nome" class="p-30">
-            <label class="formulario texto" for="email">Email:</label>
-            <input class="mb-10" type="email" name="email" id="email" class="p-30">
-            <label class="formulario texto" for="assunto">Assunto:</label><br>
-            <textarea class="mb-10" nome="assunto" id="assunto" rows="10" cols="50"></textarea>
+            <input type="text" name="nome" id="nome" onkeyup="validaNome()">
+            <div class="mb-10 text-red" id="nomeErro"></div>
 
-            <button class="tm-btn">Enviar</button>
+            <label class="formulario texto" for="email">Email:</label>
+            <input type="email" name="email" id="email" onkeyup="validaEmail()">
+            <div class="mb-10 text-red" id="emailErro"></div>
+
+            <label class="formulario texto" for="assunto">Assunto:</label><br>
+            <textarea nome="assunto" id="assunto" rows="10" cols="50" onkeyup="validaAssunto()"></textarea>
+            <div class="mb-10 text-red" id="assuntoErro"></div>
+
+            <button class="tm-btn" onclick="enviar()">Enviar</button>
 
         </form>
     </div>
@@ -51,7 +56,7 @@
 
     <h2 class="topico">Endereço da Sede Principal</h2>
     <p class="texto">Endereço: 2 Chome-12-21 Otowa, Bunkyo City, Tokyo 112-8001, Japão</p>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.32573191716!2d139.72530414993417!3d35.718206835455064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d08d01356b1%3A0xdccb72f5c14705e4!2sKodansha%20Ltd.!5e0!3m2!1spt-BR!2sbr!4v1667916991680!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.32573191716!2d139.72530414993417!3d35.718206835455064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188d08d01356b1%3A0xdccb72f5c14705e4!2sKodansha%20Ltd.!5e0!3m2!1spt-BR!2sbr!4v1667916991680!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa" onmouseover="mapaZoom()" onmouseout="mapaNormal()"></iframe>
 
         </div>
     </div>
@@ -76,6 +81,8 @@
         Todos os direitos reservados &copy
 
     </footer>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 </html>
