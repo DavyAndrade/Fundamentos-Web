@@ -4,15 +4,15 @@
     color: white;
 }
 
-    .centralizar {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.centralizar {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .fontesans {
-        font-family: sans-serif;
-    }
+.fontesans {
+    font-family: sans-serif;
+}
 
 .topico {
     text-decoration: underline;
@@ -94,6 +94,10 @@ p {
     text-align: center;
 }
 
-    .text-red {
-        color: red;
-    }
+.text-red {
+    color: red;
+}
+
+.text-realign {
+    margin-top: 140px;
+}
