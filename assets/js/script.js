@@ -53,7 +53,7 @@
             alert('Preencha as informações corretas >:[')
         }
     }
-
+    
     function mapaZoom() {
         mapa.style.width = '600px';
         mapa.style.height = '400px';
